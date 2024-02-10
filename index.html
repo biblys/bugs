@@ -22,7 +22,7 @@
 <div class="container">
   <h1>Signaler un bug Biblys</h1>
 
-  <form data-netlify="true">
+  <form enctype="multipart/form-data" data-netlify="true">
 
     <div class="form-floating mb-3">
       <input type="url" class="form-control" id="page_url" name="page_url" placeholder="https://…" required>
@@ -45,6 +45,11 @@
       <textarea class="form-control" id="error_message" name="error_message" placeholder="Commentaire"
                 style="height: 100px"></textarea>
       <label for="error_message">Si un message d'erreur est affiché, collez-le ici</label>
+    </div>
+
+    <div class="mb-3">
+      <label for="screenshot">Si possible, joindre une capture d'écran</label>
+      <input type="file" class="form-control" id="screenshot" name="screenshot">
     </div>
 
     <div class="form-floating mb-3">
